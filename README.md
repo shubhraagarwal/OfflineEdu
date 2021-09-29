@@ -1,0 +1,161 @@
+<p align="center"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn3.vectorstock.com%2Fi%2F1000x1000%2F71%2F72%2Fteacher-vector-1597172.jpg&f=1&nofb=1" width="100" height="100"</p>
+
+# **Offline-EDU**
+
+### 
+---
+
+
+ ### To contribute to the project please refer to <a href="./contributing.md" target="_blank"> contributing.md </a>
+
+
+## What the project does ( <a href='https://youtu.be/fALpeSkyPCI'>Video Link </a>)
+
+ > We have designed a system that allows a teacher to send notes as media files (image, audio and text)  by converting these to text only messages and sending the files through SMS to his/her students, thereby letting students receive the media files offline. Only the teachers require a moderate to stable internet connection on their side, the students do not need internet connection at all. Hence we strive to achieve a smooth offline education system for all, so that no child misses out on his/ her development.
+
+ 
+## Project Components
+Front-end:
+* React-native
+
+Backend: 
+* Flask 
+* IBM Watson
+ 
+ 
+# Installation 
+ ```
+ git clone  https://github.com/smgrv123/Offline-Edu
+ cd Offline-Edu
+ ```
+## Backend
+ ```
+ cd backend
+ pip3 install -r requirements.txt
+ python3 main.py
+ ```
+## Frontend
+### Teacher-side
+ ```
+ cd teacherSide
+ npm install 
+ react-native run-android
+ ```
+### Student-side
+ ```
+ cd studentSide
+ npm install 
+ react-native run-android
+ ```
+# Working
+  
+## Teacher Application: 
+  The application lets a teacher to login or signup to their account. The teacher can create a classroom and add the phone numbers of her students to the classroom. They she can click a picture of the class note, record an audio related to the note if required and click on send. Backend of the application converts the multimedia to text and send an sms to all the phone numbers listed in the classroom.
+ ### APK
+ <a href='https://drive.google.com/drive/folders/1W87Kej-ftzesTQJanqB-6ovh1Dj0Nw6e?usp=sharing'>Click Here to Download </a>
+ 
+ <img src='https://user-images.githubusercontent.com/55049859/125185567-354f2e80-e243-11eb-95d1-8f51c7923fd4.png' heigth=300 width=200 />
+<img src='https://user-images.githubusercontent.com/55049859/125185581-48fa9500-e243-11eb-98a7-736f108e3e5a.png' heigth=300 width=200 />
+<img src='https://user-images.githubusercontent.com/55049859/125185589-56b01a80-e243-11eb-8248-d15dca306b3e.png' heigth=300 width=200 />
+ <img src='https://user-images.githubusercontent.com/55049859/125185600-66c7fa00-e243-11eb-96be-d95a83f611eb.png' heigth=300 width=200 />
+<img src='https://user-images.githubusercontent.com/55049859/125185610-747d7f80-e243-11eb-87f0-0d19d7c34ced.png' heigth=300 width=200 />
+
+
+
+ 
+
+## Student Application:
+  The student has to download an application only once, rest works offline. Once the sms is received, the audio its received as text sms, the image is sent as an encoded string. The student has to copy the image string and paste in the downloaded application to see the image. Hence the entire process(except one-time downloading the app) is happens offline. 
+ ### APK
+<a href='https://drive.google.com/file/d/1mECRUEC9p2pzdFT_BFiOoZsPkS0QLnkM/view?usp=sharing'>Click here to download</a>
+ 
+<img src='https://user-images.githubusercontent.com/55049859/125185429-64b16b80-e242-11eb-8ab0-5fc08d9e2a1d.png' heigth=300 width=200 />
+<img src='https://user-images.githubusercontent.com/55049859/125185469-99252780-e242-11eb-9196-4d48e498a3b5.png' heigth=300 width=200 />
+  <img src='https://user-images.githubusercontent.com/55049859/125185483-ae01bb00-e242-11eb-805c-d3df3ce8c2af.png' heigth=300 width=200 />
+
+ 
+## Future Development:
+  - Reduce the size of image string while keeping the resolution good to limit the number of sms texts send.
+  - Improvise to sending videos by converting frames to texts.
+  - Allow longer audio files to be sent on sms.
+  - Reading the SMS automatically from the device and feeding it into the student app
+
+ 
+
+ ## Technology Stack and Dependencies
+- **ML**
+  - numpy
+  - IBM Watson
+  - Pillow
+  - Open-CV
+- **APIs and Backend**
+  - Firebase
+  - Flask
+- **Front-end**
+  - React Native 
+
+# Thank You!
+
+<h1 align="center"> Maintainers </h1>
+<table align="center">
+<tr align="center">
+<td>
+<strong>Breenda Das</strong>
+<p align="center">
+<img src = "https://cdn.discordapp.com/attachments/857649911759896579/858635368945156116/breenda.jpeg"  height="120" alt="Breenda Das">
+</p>
+<p align="center">
+<a href = "https://github.com/ds-brx"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/breenda-das-68a1891aa/">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+</p>
+</td>
+<td>
+<strong>Shubhra Agarwal</strong>
+<p align="center">
+<img src = "https://cdn.discordapp.com/attachments/852945305280577588/853135575421943858/Untitled_design.png" alt="Shubhra Agarwal" height="120">
+</p>
+<p align="center">
+<a href = "https://github.com/shubhraagarwal"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/agarwalshubhra/">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+  <a href="https://twitter.com/ShubhraCodes">
+ <img src="https://img.icons8.com/color/36/000000/twitter--v1.png"/>
+</a>
+</p>
+</td>
+</tr>
+</table>
+<table align="center">
+<tr align="center">
+<td>
+<strong>Naman Garg</strong>
+<p align="center">
+<img src = "https://avatars.githubusercontent.com/u/40496687?v=4" alt="Palak Aggarwal" height="120">
+</p>
+<p align="center">
+<a href = "https://github.com/Namangarg110"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/namangarg110/">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+</p>
+</td>
+<td>
+<strong>Sumrit Grover</strong>
+<p align="center">
+<img src = "https://cdn.discordapp.com/attachments/852945305280577588/852945815592632360/sumrit_grover.jpg" alt="Sumrit Grover" height="120">
+</p>
+<p align="center">
+<a href = "https://github.com/smgrv123"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/sumrit-grover-1689351aa/">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+ <a href="https://twitter.com/grover_sumrit">
+ <img src="https://img.icons8.com/color/36/000000/twitter--v1.png"/>
+</a>
+  </p>
+</td>
+</tr>
+</table>
