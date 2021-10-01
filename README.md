@@ -25,7 +25,7 @@ Backend:
  
 # Installation 
  ```
- git clone  https://github.com/smgrv123/Offline-Edu
+ git clone  https://github.com/shubhraagarwal/OfflineEdu
  cd Offline-Edu
  ```
 ## Backend
