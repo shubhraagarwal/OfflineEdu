@@ -110,7 +110,7 @@ def string_to_image():
   width = float(request.values['width'])
   image = base64.b64decode(bs64string)
   filename = 'image.jpg'
-  path = os.path.join(app.config['IMAGE_PATH'],filename)
+  path = os.path.join('./images/',filename)
   with open(path, 'wb') as f:
     f.write(image)
   image = Image.open(path)
